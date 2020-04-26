@@ -25,10 +25,10 @@ while True:
 
 
     def spanishTranslator(): # translation function for spanish text
-        authenticator = IAMAuthenticator('HfRcwyvVfunmczz2uSVhaagQqU43saBw_cX2CuH3--Ae')
+        authenticator = IAMAuthenticator('<authentical information')
         language_translator = LanguageTranslatorV3(version='2020-01-16', authenticator=authenticator)
         language_translator.set_service_url(
-            'https://api.eu-gb.language-translator.watson.cloud.ibm.com/instances/a3a444fb-86ab-427b-a152-12e10e45a2d7')
+            'url information')
         translation = language_translator.translate(text=interSpan1, model_id='es-en').get_result()
         print(translation)
         reply = jibu + ',' + studentNumber + ',' + studentName4 + ':' + translation
@@ -36,10 +36,10 @@ while True:
         microcontroller_2.write(registrationReply)
 
     def spanishLanguageTranslator(): # translation function for incoming english language to spanish
-        authenticator = IAMAuthenticator('HfRcwyvVfunmczz2uSVhaagQqU43saBw_cX2CuH3--Ae')
+        authenticator = IAMAuthenticator('authentication information')
         language_translator = LanguageTranslatorV3(version='2020-01-16', authenticator=authenticator)
         language_translator.set_service_url(
-            'https://api.eu-gb.language-translator.watson.cloud.ibm.com/instances/a3a444fb-86ab-427b-a152-12e10e45a2d7')
+            'https://url information')
         translation = language_translator.translate(text=translationText, model_id='en-es').get_result()
         print(translation)
         reply = jibu + ',' + studentNumber + ',' + studentNumber + ':' + translation
@@ -49,7 +49,7 @@ while True:
 
 
     def class4registration(): # function to place the registration information for grade 4 students into student database
-        conn = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='reactor07')
+        conn = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='********')
         mycursor = conn.cursor()
         mycursor.execute(
                 """INSERT INTO darasala4 VALUES('' ,'{}', '{}' , '{}')""".format((str(studentNumber)),str(studentName4), str(dateTime)))
@@ -62,7 +62,7 @@ while True:
         microcontroller_2.write(registrationReply)
 
     def sqlRegistrationDarasaLa5():  # function to place the registration information for grade 5 students into student database
-        conn = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='reactor07')
+        conn = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='********')
         mycursor = conn.cursor()
         mycursor.execute(
             """INSERT INTO darasala5 VALUES('' ,'{}', '{}' , '{}')""".format(str(studentNumber), str(studentName5), str(dateTime)))
@@ -82,7 +82,7 @@ while True:
         microcontroller_2.write(confirmationReply)
 
     def sqlRegistrationDarasaLa7():  # function to place the registration information for grade 7 students into student database
-        conn = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='reactor07')
+        conn = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='********')
         mycursor = conn.cursor()
         mycursor.execute(
             """INSERT INTO darasala7 VALUES('' ,'{}', '{}' , '{}')""".format(str(studentNumber), str(studentName7), str(dateTime)))
@@ -114,7 +114,7 @@ while True:
         replyRegistration7Confirmation()
     if mcu1Data[5:6] == '5': # text string designation to pull information from darasala5_spanish eschool database table
         print("Spanish Inquisition")
-        connection = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='reactor07')
+        connection = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='********')
         sql_select_Query = "SELECT spanish FROM darasala5_spanish"
         cursor = connection.cursor()
         cursor.execute(sql_select_Query)
@@ -136,7 +136,7 @@ while True:
     if mcu1Data[7:8].upper() == '4': # teachers to send homework to darasa 4
         print("4th Grade Assingment")
         assignmentString = mcu1Data[10:]
-        connection = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='reactor07')
+        connection = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='********')
 
         sql_select_Query = "SELECT number FROM darasala4"
         cursor = connection.cursor()
@@ -153,7 +153,7 @@ while True:
     if mcu1Data[7:8].upper() == '5': # teachers to send homework to darasa 5
         print("5th Grade Assingment")
         assignmentString = mcu1Data[10:]
-        connection = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='reactor07')
+        connection = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='********')
 
         sql_select_Query = "SELECT number FROM darasala5"
         cursor = connection.cursor()
@@ -170,7 +170,7 @@ while True:
     if mcu1Data[7:8].upper() == '7': # teachers send homework to darasa 7
         print("7th Grade Assingment")
         assignmentString = mcu1Data[10:]
-        connection = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='reactor07')
+        connection = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='********')
         sql_select_Query = "SELECT number FROM darasala7"
         cursor = connection.cursor()
         cursor.execute(sql_select_Query)
@@ -185,7 +185,7 @@ while True:
             time.sleep(2)
 
     if mcu1Data[4:5] == '1': # text to get geography information geo 1 textbook information
-        connection = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='reactor07')
+        connection = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='********')
         sql_select_Query = "SELECT geography FROM darasala4_subjects"
         cursor = connection.cursor()
         cursor.execute(sql_select_Query)
@@ -197,7 +197,7 @@ while True:
         assnGeoreply = bytes(assnGeo, 'ascii')
         microcontroller_2.write(assnGeoreply)
     if mcu1Data[4:5] == '4': # text to get world history information wor 4
-        connection = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='reactor07')
+        connection = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='********')
         sql_select_Query = "SELECT world_history FROM darasala4_subjects"
         cursor = connection.cursor()
         cursor.execute(sql_select_Query)
@@ -205,7 +205,7 @@ while True:
         print(len(assingmentText))
         print(assingmentText)
     if mcu1Data[4:5] == '3': # text to get english information eng 3
-        connection = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='reactor07')
+        connection = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='********')
         sql_select_Query = "SELECT english_languaged FROM darasala4_subjects"
         cursor = connection.cursor()
         cursor.execute(sql_select_Query)
@@ -216,7 +216,7 @@ while True:
         darasa4Assn = mcu1Data[4:]
         print(darasa4Assn)
         print("Darasa La 4 submission")
-        conn = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='reactor07')
+        conn = mysql.connector.connect(host='127.0.0.1', database='eschool', user='root', password='********')
         mycursor = conn.cursor()
         mycursor.execute(
             """INSERT INTO darasala4_assignments VALUES('' ,'{}', '{}' , '{}')""".format((str(studentNumber)), str(darasa4Assn),
