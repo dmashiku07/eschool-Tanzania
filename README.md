@@ -36,7 +36,7 @@ The idea is to use short message services(SMS) and increase its capabilities exp
 
 ## Demo video
 
-[![Watch the video](https://youtu.be/QZSzpB4lSKU)]
+[![Watch the video](https://youtu.be/QZSzpB4lSKU)](https://youtu.be/QZSzpB4lSKU)
 
 ## The architecture
 
