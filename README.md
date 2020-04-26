@@ -40,7 +40,7 @@ The idea is to use short message services(SMS) and increase its capabilities exp
 
 ## The architecture
 
-![Video transcription/translation app](https://)
+![Video transcription/translation app](https://github.com/dmashiku07/eschool-Tanzania/blob/master/SMS%20eschool%20system%20daigram_v1.png)
 
 1.) Teachers would text to a set of databases which contain the students grade level and name. For 7th grade it would be <darasa 7 + ',' + <assignment text>
 2. The student from the designated grade level would receive the text message and have instructions on how to get information about an assignment, textbook resources, translation services, and online resources. The student would text <ASSN> to designated number for assignments, <subject designation> ex physics 1 for physics resources, <TES + ',' translation text> to get translation, <T + ',' <search text> to get access a search engine for online resources and <WIKI + ',' <wikipedia search text> to get information from the wikipedia webite. 
