@@ -1,8 +1,8 @@
-# Submission name
+# eschool=Tanzania
 
 [![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/badge/Join-Slack-blue)](https://callforcode.org/slack) [![Website](https://img.shields.io/badge/View-Website-blue)](https://code-and-response.github.io/Project-Sample/)
 
-A basic GitHub repository example for Call for Code submissions and those projects that join the Code and Response initiative. Not all sections or files are required. You can make this as simple or as in-depth as you need.
+The eschool plateform is a revolutionary new way to how education is delivered in Tanzania. With over 25+ million user with cell phones that do not have internet capability this plateform extends the capabilities of such devices. Giving students the ability to have all their textbook, and assignment resources available from SMS texts. Also facilitating the ability to search online for additional resources, and providing an avenue to submit assignments. 
 
 *Read this in other languages: [English](README.md), [한국어](README.ko.md), [português](README.pt_br.md).*
 
@@ -13,9 +13,6 @@ A basic GitHub repository example for Call for Code submissions and those projec
 1. [The architecture](#the-architecture)
 1. [Long description](#long-description)
 1. [Project roadmap](#project-roadmap)
-1. [Getting started](#getting-started)
-1. [Running the tests](#running-the-tests)
-1. [Live demo](#live-demo)
 1. [Built with](#built-with)
 1. [Contributing](#contributing)
 1. [Versioning](#versioning)
@@ -24,18 +21,18 @@ A basic GitHub repository example for Call for Code submissions and those projec
 1. [Acknowledgments](#acknowledgments)
 
 ## Short description
+The eschool-Tanzania plateform is designed to facilitate access to learning resources from an SMS text based system. Students are able to access assignment information, textbooks, online resources, and submit assignments all from SMS text. 
 
 ### What's the problem?
 
-Part of the World Health Organization's guidance on limiting further spread of COVID-19 is to practice social distancing. As a result, schools in most affected areas are taking precautionary measures by closing their facilities. With school-aged children at home for an indeterminate amount of time,  keeping them engaged, entertained, and on top of their education is important.
+With the COVID-19 pandemic students in Tanzania are not able to go to school as mandanted by the government. Most students do not have access to smartphones with internet capability, satellite televisions, and radios. All online based educational plateform are catered more towards the higher education levels in Tanzania, primarily university. There are no available internet or online based learning plateforms for students in secondary school levels(high school) middle school levels, and primary school levels.
 
 ### How can technology help?
 
-Schools and teachers can continue to engage with their students through virtual classrooms, and even create interactive spaces for classes. As parents face a new situation where they may need to homeschool their children, finding appropriate online resources is important as well.
+Technology can be an asset for providing a very interesting and powerful brigde for facilitating different objectives.
 
 ### The idea
-
-It's imperative that learning and creating can continue when educational institutions have to shift the way they teach in times of crises, such as the COVID-19 pandemic. Providing a set of open source tools, backed by IBM Cloud and Watson Services, will enable educators to more easily make content available for their students.
+The idea is to use short message services(SMS) and increase its capabilities exponentially. This system will give students the ability to have access to all learning resources including textbooks, online resources, translation services, and teachers in real time. Students are able to access information by texting a designated string to an allocated number to get assingments, textbook resources,syllabus information and to submit assignments. Teachers are then able to access the students information in real time from anywhere in the country. This will give teachers a more convenient way of grading students assignments that is more efficient then going through stacks of papers. The design is catered towards public schools where most students and families have cell phones that do not have internet capability... we refer to them here as "feature phones". It's imperative that learning and creating can continue when educational institutions have to shift the way they teach in times of crises, such as the COVID-19 pandemic. Providing a set of open source tools, backed by IBM Cloud and IBM translator, will enable educators to more easily make content available for their students. 
 
 ## Demo video
 
@@ -45,10 +42,10 @@ It's imperative that learning and creating can continue when educational institu
 
 ![Video transcription/translation app](https://developer.ibm.com/developer/tutorials/cfc-starter-kit-speech-to-text-app-example/images/cfc-covid19-remote-education-diagram-2.png)
 
-1. The user navigates to the site and uploads a video file.
-2. Watson Speech to Text processes the audio and extracts the text.
-3. Watson Translation (optionally) can translate the text to the desired language.
-4. The app stores the translated text as a document within Object Storage.
+1. To get information about an assignment, textbook resources, translation services, and online resources the student would text <class>,<ASSN> to designated number for assignments, <subject designation> ex physics 1 for physics resources, <TES + ',' translation text> to get translation, <T + ',' <search text> to get access a search engine for online resources and <WIKI + ',' <wikipedia search text> to get information from the wikipedia webite. 
+2. The information would then be collected and the appropriate functions will be called based the the string format
+3. The inforamtion would then be sent back to the user
+4. All the information for assignments, and textbook resources are stored on SQL database and accessed and returned to student when appropriate string is sent to python logic system. 
 
 ## Long description
 
@@ -58,79 +55,13 @@ It's imperative that learning and creating can continue when educational institu
 
 ![Roadmap](roadmap.jpg)
 
-## Getting started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```bash
-dnf install wget
-wget http://www.example.com/install.sh
-bash install.sh
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be, for example
-
-```bash
-export TOKEN="fffd0923aa667c617a62f5A_fake_token754a2ad06cc9903543f1e85"
-export EMAIL="jane@example.com"
-dnf install npm
-node samplefile.js
-Server running at http://127.0.0.1:3000/
-```
-
-And repeat
-
-```bash
-curl localhost:3000
-Thanks for looking at Code-and-Response!
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why, if you were using something like `mocha` for instnance
-
-```bash
-npm install mocha --save-dev
-vi test/test.js
-./node_modules/mocha/bin/mocha
-```
-
-### And coding style tests
-
-Explain what these tests test and why, if you chose `eslint` for example
-
-```bash
-npm install eslint --save-dev
-npx eslint --init
-npx eslint sample-file.js
-```
-
-## Live demo
-
-You can find a running system to test at [callforcode.mybluemix.net](http://callforcode.mybluemix.net/)
 
 ## Built with
 
-* [IBM Cloudant](https://cloud.ibm.com/catalog?search=cloudant#search_results) - The NoSQL database used
+* [IBM Watson Language Translator](https://www.ibm.com/watson/services/language-translator/) - 
 * [IBM Cloud Functions](https://cloud.ibm.com/catalog?search=cloud%20functions#search_results) - The compute platform for handing logic
 * [IBM API Connect](https://cloud.ibm.com/catalog?search=api%20connect#search_results) - The web framework used
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
 
 ## Contributing
 
