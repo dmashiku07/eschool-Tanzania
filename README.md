@@ -41,11 +41,11 @@ The idea is to use short message services(SMS) and increase its capabilities exp
 ## The architecture
 
 ![Video transcription/translation app](https://developer.ibm.com/developer/tutorials/cfc-starter-kit-speech-to-text-app-example/images/cfc-covid19-remote-education-diagram-2.png)
-
-1. To get information about an assignment, textbook resources, translation services, and online resources the student would text <class>,<ASSN> to designated number for assignments, <subject designation> ex physics 1 for physics resources, <TES + ',' translation text> to get translation, <T + ',' <search text> to get access a search engine for online resources and <WIKI + ',' <wikipedia search text> to get information from the wikipedia webite. 
-2. The information would then be collected and the appropriate functions will be called based the the string format
-3. The inforamtion would then be sent back to the user
-4. All the information for assignments, and textbook resources are stored on SQL database and accessed and returned to student when appropriate string is sent to python logic system. 
+1.) Teachers would text to a set of databases which contain the students grade level and name. For 7th grade it would be <darasa 7 + ',' + <assignment text>
+2. The student from the designated grade level would receive the text message and have instructions on how to get information about an assignment, textbook resources, translation services, and online resources. The student would text <ASSN> to designated number for assignments, <subject designation> ex physics 1 for physics resources, <TES + ',' translation text> to get translation, <T + ',' <search text> to get access a search engine for online resources and <WIKI + ',' <wikipedia search text> to get information from the wikipedia webite. 
+3. The information would then be collected and the appropriate functions will be called based the the string format
+4. The inforamtion would then be sent back to the user
+5. All the information for assignments, and textbook resources are stored on SQL database and accessed and returned to student when appropriate string is sent to python logic system. 
 
 ## Long description
 
