@@ -1,6 +1,8 @@
 #include <SoftwareSerial.h>
 SoftwareSerial mySerial(3, 2); //SIM800L Tx & Rx is connected to Arduino #3 & #2 
 
+//code that gets text message information from the sim800L module and sends the information vai serial to the python logic processor
+
 String data; // varaible to hold raw data from sim module
 String userNumber; // varaible to hold userNumber substring
 String messageBody; // varaible to hold message body substring
