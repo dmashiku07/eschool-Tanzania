@@ -58,7 +58,7 @@ The idea is to use short message services(SMS) and increase its capabilities exp
 
 ## Project roadmap
 
-![Roadmap](roadmap.jpg)
+![Roadmap](https://github.com/dmashiku07/eschool-Tanzania/blob/master/SMS%20eschool%20RoadMap.png)
 
 
 ## Built with
