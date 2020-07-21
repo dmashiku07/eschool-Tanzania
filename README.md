@@ -21,7 +21,7 @@ The eschool platform is a revolutionary new way to how education is delivered in
 1. [Acknowledgments](#acknowledgments)
 
 ## Short description
-The eschool-Tanzania plateform is designed to facilitate access to learning resources from an SMS text based system. Students are able to access assignment information, textbooks, online resources, and submit assignments all from SMS text. 
+The eschool-Tanzania platform is designed to facilitate access to learning resources from an SMS text based system. Students are able to access assignment information, textbooks, online resources, and submit assignments all from SMS text. 
 
 ### What's the problem?
 
