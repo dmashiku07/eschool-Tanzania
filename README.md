@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/badge/Join-Slack-blue)](https://callforcode.org/slack) [![Website](https://img.shields.io/badge/View-Website-blue)](https://code-and-response.github.io/Project-Sample/)
 
-The eschool plateform is a revolutionary new way to how education is delivered in Tanzania. With over 25+ million user with cell phones that do not have internet capability this plateform extends the capabilities of such devices. Giving students the ability to have all their textbook, and assignment resources available from SMS texts. Also facilitating the ability to search online for additional resources, and providing an avenue to submit assignments. 
+The eschool platform is a revolutionary new way to how education is delivered in Tanzania. With over 25+ million user with cell phones that do not have internet capability this plateform extends the capabilities of such devices. Giving students the ability to have all their textbook, and assignment resources available from SMS texts. Also facilitating the ability to search online for additional resources, and providing an avenue to submit assignments. 
 
 *Read this in other languages: [English](README.md), [한국어](README.ko.md), [português](README.pt_br.md).*
 
